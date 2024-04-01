@@ -62,7 +62,7 @@ var loadCmd = &cobra.Command{
 }
 
 var cleanCmd = &cobra.Command{
-	Use:   "clean",
+	Use:   "clean [names]",
 	Short: "Remove all loaded secrets that were set as environment variables",
 	Run: func(cmd *cobra.Command, args []string) {
 		// Remove all loaded secrets that were set as environment variables
